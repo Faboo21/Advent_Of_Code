@@ -28,6 +28,8 @@ def v2(entree):
         for nb in res:
             if (nb in bon):
                 cpt+= 1
-                nbCarteActuelle = cartesBase.index(carte)
-                cartes.insert()
+                nbcarte = cartesBase.index(carte)
+                cartes.append(cartesBase[nbcarte + cpt])
+    print(len(cartes))
+    
 v2(inputTest)
