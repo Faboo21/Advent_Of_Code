@@ -18,4 +18,16 @@ def v1(entree):
         total += cpt
     print (total)
 
-v1(input)
+def v2(entree):
+    cartes = entree.split("\n")
+    cartesBase = entree.split("\n")
+    for carte in cartes:
+        cpt = 0
+        bon = [val for val in carte.split(":")[1].split("|")[0].split(" ") if val != '']
+        res = [val for val in carte.split(":")[1].split("|")[1].split(" ") if val != '']
+        for nb in res:
+            if (nb in bon):
+                cpt+= 1
+                nbCarteActuelle = cartesBase.index(carte)
+                cartes.insert()
+v2(inputTest)
