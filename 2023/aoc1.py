@@ -1,5 +1,5 @@
-with open("input.txt", 'r') as fichier:input = fichier.read()
-with open("inputTest.txt", 'r') as fichier:inputTest = fichier.read()
+with open("2023/input.txt", 'r') as fichier:input = fichier.read()
+with open("2023/inputTest.txt", 'r') as fichier:inputTest = fichier.read()
 
 entree = inputTest
 
@@ -12,7 +12,7 @@ for ligne in input :
     tab = []
     for val in truc :
         a = ligne.find(str(val))
-        if (a != -1) :
+        if a != -1 :
             tab.append([a,val])
         a = ligne.rfind(str(val))
         if (a != -1) :
@@ -32,4 +32,4 @@ for ligne in input :
     else :
         nb += str(resultat[max[1]])
     total += int(nb)
-print (total)
+print (total + "cc")

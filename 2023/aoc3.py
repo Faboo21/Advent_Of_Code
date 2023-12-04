@@ -1,4 +1,4 @@
-import re
+"""import re
 
 with open("2023/input.txt", 'r') as fichier:
     inputFinal = fichier.read()
@@ -21,5 +21,4 @@ def v1(entree):
             
 v1(inputTest)
 
-
-
+"""
