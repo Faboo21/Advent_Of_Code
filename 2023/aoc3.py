@@ -21,13 +21,15 @@ def v1(entree):
         numbers = [int(temp) for temp in numbers.split() if temp.isdigit()]
         temp = copy(input[i])
         for nombre in numbers:
-            print (temp)
             taille = len(str(nombre))
             pos = temp.find(str(nombre))
-            temp = temp.replace(str(nombre)," ")
-            
+            temp = temp.replace(str(nombre),"."*taille)
+            print(input[i - 1][pos-1:pos+taille+1])
+            print(input[i][pos-1:pos+taille+1])
+            print(input[i + 1][pos-1:pos+taille+1])
+            print()
             #surement un pb de plusieurs occurence dans une liste
-            if "#" in input[i - 1][pos-1:pos+taille+1] or "#" in input[i][pos-1:pos+taille+1] or "#" in input[i + 1][pos-1:pos+taille+1]:
+            if ("#" in input[i - 1][pos-1:pos+taille+1]) or ("#" in input[i][pos-1:pos+taille+1]) or ("#" in input[i + 1][pos-1:pos+taille+1]):
                 total += nombre
     print (total)
     
